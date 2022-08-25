@@ -16,6 +16,8 @@ class Usemail(models.Model):
 
     def __str__(self):
         return self.name
+        print("keeping my streaks gouing ")
 
     def get_absolute_url(self):
         return reverse("_detail", kwargs={"pk": self.pk})
+        print("this is just to keep my streaks going")
