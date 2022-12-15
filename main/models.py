@@ -21,3 +21,12 @@ class Usemail(models.Model):
     def get_absolute_url(self):
         return reverse("_detail", kwargs={"pk": self.pk})
         print("this is just to keep my streaks going")
+
+
+class CybersafeModel(models.Model):
+    email = models.EmailField(max_length=255)
+    subject = models.CharField(max_length=255)
+    message = models.CharField(max_length=255)
+
+    def __str__(self):
+        return f'{self.email} Messages'

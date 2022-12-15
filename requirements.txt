@@ -1,0 +1,4 @@
+django
+django-cors-headers
+dj-database-url
+psycopg2-binary==2.9.3
